@@ -1,5 +1,6 @@
 import Login from "../Login/Login/Login";
 import Registration from "../Login/Registration/Registration";
+import Appointment from "../Pages/Appointment/Appointment/Appointment";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../Layout/Main");
@@ -28,6 +29,12 @@ const { default: Home } = require("../Pages/Home/Home/Home");
         {
             path: '/registration',
             element:<Registration></Registration>,
+
+        }
+        ,
+        {
+            path: '/appointment',
+            element:<Appointment></Appointment>,
 
         }
       ]
